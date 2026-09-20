@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fm-multi-drop"
+dynamic = ["version"]
+description = "Get N card drops per duel win in Yu-Gi-Oh! Forbidden Memories (US) disc images"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Mohammed Dahhani"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Topic :: Games/Entertainment",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/mohammeddahhani/fm-multi-drop"
+
+[project.scripts]
+fm-multi-drop = "fm_multi_drop.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "fm_multi_drop.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

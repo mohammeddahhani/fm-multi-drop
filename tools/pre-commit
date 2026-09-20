@@ -1,0 +1,3 @@
+#!/bin/sh
+# Refuses to commit anything that looks like game data, disc images, saves or BIOS files.
+exec python3 "$(git rev-parse --show-toplevel)/tools/check_no_game_files.py" --staged
