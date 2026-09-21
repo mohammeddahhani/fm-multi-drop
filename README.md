@@ -1,9 +1,10 @@
 # fm-multi-drop
 
-Get **N cards per duel win** in *Yu-Gi-Oh! Forbidden Memories* (US) instead of one.
+Get **N cards per duel win** in *Yu-Gi-Oh! Forbidden Memories* **Kuriboh Mod**.
 
-Give it a disc image of the normal **Kuriboh mod** (or the stock US game) and a number, and it writes a
-**new** disc image where every duel win hands out that many cards. Your original file is never modified.
+Give it a disc image of the **Kuriboh Mod** (normal mode) and a number, and it writes a **new** disc image
+where every duel win hands out that many cards instead of one. Your original file is never modified.
+(It also works on the stock US game.)
 
 ```
 fm-multi-drop "YFM MOD KURIBOH.iso" --drops 10

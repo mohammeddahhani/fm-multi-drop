@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "fm-multi-drop"
 dynamic = ["version"]
-description = "Get N card drops per duel win in Yu-Gi-Oh! Forbidden Memories (US) disc images"
+description = "Get N cards per duel win in Yu-Gi-Oh! Forbidden Memories Kuriboh Mod"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}

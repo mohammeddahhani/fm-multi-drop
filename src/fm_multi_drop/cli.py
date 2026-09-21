@@ -177,9 +177,9 @@ def _run(a: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="fm-multi-drop",
-        description="Patch a Yu-Gi-Oh! Forbidden Memories (US) disc image so a duel win gives N cards "
-                    "instead of 1. Works on the normal Kuriboh mod and the stock game. "
-                    "Your input file is never modified; a new image is written.",
+        description="Get N cards per duel win in Yu-Gi-Oh! Forbidden Memories Kuriboh Mod: patches a copy of "
+                    "your Kuriboh Mod disc image so a win gives N cards instead of 1 (the stock US game "
+                    "works too). Your input file is never modified; a new image is written.",
         epilog="Example: fm-multi-drop \"YFM MOD KURIBOH.iso\" --drops 10")
     p.add_argument("input", nargs="?", help="raw 2352-byte/sector disc image (.iso/.bin) that you own")
     p.add_argument("-n", "--drops", type=int, metavar="N",
